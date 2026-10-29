@@ -2,10 +2,13 @@ Source boxes on Forever_Memories_Canva_Photo_Layers.pptx.png (982x1473). The ori
 
 crest.png 50,2,100,68
 hero.jpg 0,76,540,412
+hero-wide.jpg is the full luggage-and-sunset plate with the baked flyer words removed, so the HTML headline can sit on the sky.
 jennifer.jpg 32,508,255,752
+jennifer-polaroid.jpg 12,484,292,812
 parks.jpg 46,824,322,922
 cruises.jpg 346,824,644,922
 all-inclusive.jpg 668,824,952,922
 worldwide.jpg 46,1002,322,1100
 family.jpg 346,1002,644,1100
-celebrations.jpg 668,1002,952,1100
+celebrations.jpg 668,1004,952,1116
+mountains.svg and tear.svg are drawn to match the flyer bands. They are not crops.
