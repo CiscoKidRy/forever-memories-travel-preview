@@ -1,0 +1,18 @@
+[Unit]
+Description=Forever Memories Travel preview inquiry API
+After=network.target postgresql.service
+Requires=postgresql.service
+
+[Service]
+User=fmtinq
+Group=fmtinq
+WorkingDirectory=/opt/forever-memories-inquiries-preview
+EnvironmentFile=/etc/forever-memories-inquiries-preview.env
+ExecStart=/opt/forever-memories-inquiries/venv/bin/python app.py
+Restart=on-failure
+RestartSec=3
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

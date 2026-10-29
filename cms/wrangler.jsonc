@@ -1,0 +1,21 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "fmt-admin-preview",
+  "account_id": "aac0196dfd6a1ccec84b92a22602ffb3",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-10-14",
+  "workers_dev": true,
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "fmt-admin-preview",
+      "database_id": "093bfa2d-b51b-43d6-bd8d-707313693600"
+    }
+  ],
+  "vars": {
+    "GITHUB_OWNER": "CiscoKidRy",
+    "GITHUB_REPO": "forever-memories-travel-preview",
+    "GITHUB_BRANCH": "main",
+    "INQUIRY_API_ORIGIN": "https://preview-inquiries.forevermemoriestravel.com"
+  }
+}
