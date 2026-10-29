@@ -1,0 +1,18 @@
+[Unit]
+Description=Forever Memories Travel preview inquiry staff API
+After=network.target postgresql.service
+Requires=postgresql.service
+
+[Service]
+User=fmtstaff
+Group=fmtstaff
+WorkingDirectory=/opt/forever-memories-inquiries-preview
+EnvironmentFile=/etc/forever-memories-staff-preview.env
+ExecStart=/opt/forever-memories-inquiries/venv/bin/python staff_api.py
+Restart=on-failure
+RestartSec=3
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,11 @@
+Source boxes on Forever_Memories_Canva_Photo_Layers.pptx.png (982x1473). The original file is not in this repo.
+
+crest.png 50,2,100,68
+hero.jpg 0,76,540,412
+jennifer.jpg 32,508,255,752
+parks.jpg 46,824,322,922
+cruises.jpg 346,824,644,922
+all-inclusive.jpg 668,824,952,922
+worldwide.jpg 46,1002,322,1100
+family.jpg 346,1002,644,1100
+celebrations.jpg 668,1002,952,1100

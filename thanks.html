@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Request received — Forever Memories Travel</title>
+  <meta name="description" content="Forever Memories Travel has the trip request.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://preview.forevermemoriestravel.com/thanks.html">
+  <meta property="og:title" content="Request received — Forever Memories Travel">
+  <meta property="og:description" content="Forever Memories Travel has the trip request.">
+  <meta property="og:url" content="https://preview.forevermemoriestravel.com/thanks.html">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://preview.forevermemoriestravel.com/assets/design/crest.png">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="site-header">
+    <div class="bar">
+      <a class="brand" href="index.html">
+        <img class="crest" src="assets/design/crest.png" width="50" height="66" alt="Forever Memories luggage tag">
+        <span class="wordmark">
+          <span class="wm-line">Forever Memories</span>
+          <span class="wm-travel">Travel</span>
+        </span>
+      </a>
+      <p class="eyebrow" data-field="eyebrow">Colorado Springs travel agency</p>
+      <details class="nav-toggle">
+        <summary>Menu</summary>
+        <nav class="nav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="meet.html">Meet Jennifer</a>
+          <a href="experience.html">The Experience</a>
+          <details class="dest-menu">
+            <summary>Destinations</summary>
+            <div class="dest-menu-panel">
+              <a href="destinations.html">All destinations</a>
+        <a href="parks.html">Theme parks and magic</a>
+        <a href="cruises.html">Cruises and voyages</a>
+        <a href="all-inclusive.html">All-inclusive escapes</a>
+        <a href="international.html">Worldwide adventures</a>
+        <a href="family.html">Family and multigenerational</a>
+        <a href="celebrations.html">Celebrations and group travel</a>
+            </div>
+          </details>
+          <a href="journal.html">Travel Journal</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html" aria-current="page">Contact</a>
+          <a class="nav-plan" href="contact.html#plan">Plan my trip</a>
+        </nav>
+      </details>
+    </div>
+  </header>
+  <main id="content" class="page">
+    <div class="wrap narrow">
+      <h1 id="thanks-heading" tabindex="-1">We have your request.</h1>
+      <p id="thanks-detail">We saved your request on the preview site. This preview does not send email.</p>
+      <p id="thanks-ref"></p>
+      <p><a class="button" href="index.html">Back to the site</a></p>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <p>Forever Memories Travel</p>
+    <p>We plan family vacations, theme parks, cruises, and international trips from Colorado Springs.</p>
+    <p class="privacy-note">This preview does not use Google Analytics and does not set an analytics cookie. The trip form stores the name, email, phone, and trip details you enter on the preview inquiry service. It does not send email.</p>
+  </footer>
+  <script>
+    const heading = document.querySelector("#thanks-heading");
+    const detail = document.querySelector("#thanks-detail");
+    const refLine = document.querySelector("#thanks-ref");
+    const params = new URLSearchParams(location.search);
+    const ref = params.get("ref") || "";
+    const valid = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(ref);
+    if (valid) {
+      refLine.textContent = "Your reference is " + ref + ".";
+      if (params.get("mail") === "sent") {
+        detail.textContent = "A confirmation email was sent to the address you entered.";
+      } else {
+        detail.textContent = "We saved your request. This preview does not send a confirmation email.";
+      }
+    }
+    heading.focus();
+  </script>
+</body>
+</html>

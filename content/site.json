@@ -1,0 +1,127 @@
+{
+  "version": 1,
+  "publishedAt": "2026-10-29T00:00:00Z",
+  "agency": {
+    "name": "Forever Memories Travel",
+    "eyebrow": "Colorado Springs travel agency",
+    "footerLine": "We plan family vacations, theme parks, cruises, and international trips from Colorado Springs."
+  },
+  "intro": {
+    "heading": "Thoughtfully planned journeys that last forever.",
+    "lede": "Personalized travel planning, expert guidance, and unforgettable experiences for every kind of traveler."
+  },
+  "sections": [
+    {
+      "id": "vacations",
+      "kicker": "Family vacations",
+      "heading": "The trip fits the family, not the other way around.",
+      "body": "Family travel works when the plan follows who is coming, how you like to spend a day, and what you want to skip. The plan follows that, from the first night to the ride home."
+    },
+    {
+      "id": "parks",
+      "kicker": "Theme parks",
+      "heading": "Disney and Orlando days with room to breathe.",
+      "body": "A Disney visit or another Orlando park day needs tickets, a park order, and time between the gates. The castle can be the whole point, or one piece of a longer trip."
+    },
+    {
+      "id": "cruises",
+      "kicker": "Cruises",
+      "heading": "The ship, the ports, and the week between them.",
+      "body": "We sort the cruise, the cabin style, and which ports are worth leaving the ship for. You get a week that is planned before you board. A cruise can stand on its own or follow a few days in Orlando."
+    },
+    {
+      "id": "international",
+      "kicker": "International travel",
+      "heading": "Farther from home, still a clear plan.",
+      "body": "Passports, pacing, and a route that matches the group. International trips stay specific to the people traveling, not a generic tour."
+    }
+  ],
+  "steps": [
+    {
+      "title": "You write.",
+      "body": "Who is going, what kind of trip, and when you hope to leave."
+    },
+    {
+      "title": "We plan it with you.",
+      "body": "Destinations, pace, and the pieces that matter to your group."
+    },
+    {
+      "title": "You go.",
+      "body": "The request you send here is the start of that conversation."
+    }
+  ],
+  "plan": {
+    "kicker": "Plan my trip",
+    "heading": "Not sure where to begin?",
+    "body": "Tell me a little about what you're dreaming of, who's coming along, and what you'd love to experience."
+  },
+  "stories": [],
+  "listings": [
+    {
+      "id": "card-park",
+      "slug": "card-park",
+      "title": "Theme parks and magic",
+      "summary": "Disney, Universal and more",
+      "body": "Disney, Universal and more",
+      "image": null,
+      "imageAlt": null,
+      "publishedAt": null,
+      "category": "park"
+    },
+    {
+      "id": "card-cruise",
+      "slug": "card-cruise",
+      "title": "Cruises and voyages",
+      "summary": "Ocean, river and luxury cruising",
+      "body": "Ocean, river and luxury cruising",
+      "image": null,
+      "imageAlt": null,
+      "publishedAt": null,
+      "category": "cruise"
+    },
+    {
+      "id": "card-all-inclusive",
+      "slug": "card-all-inclusive",
+      "title": "All-inclusive escapes",
+      "summary": "Resorts, honeymoons and more",
+      "body": "Resorts, honeymoons and more",
+      "image": null,
+      "imageAlt": null,
+      "publishedAt": null,
+      "category": "all-inclusive"
+    },
+    {
+      "id": "card-world",
+      "slug": "card-world",
+      "title": "Worldwide adventures",
+      "summary": "International and bucket-list travel",
+      "body": "International and bucket-list travel",
+      "image": null,
+      "imageAlt": null,
+      "publishedAt": null,
+      "category": "international"
+    },
+    {
+      "id": "card-family",
+      "slug": "card-family",
+      "title": "Family and multigenerational",
+      "summary": "Travel for every generation",
+      "body": "Travel for every generation",
+      "image": null,
+      "imageAlt": null,
+      "publishedAt": null,
+      "category": "family"
+    },
+    {
+      "id": "card-celebration",
+      "slug": "card-celebration",
+      "title": "Celebrations and group travel",
+      "summary": "Weddings, reunions and groups",
+      "body": "Weddings, reunions and groups",
+      "image": null,
+      "imageAlt": null,
+      "publishedAt": null,
+      "category": "celebration"
+    }
+  ]
+}

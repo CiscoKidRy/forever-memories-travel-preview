@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.env
+staff.token
+node_modules/
+cms/dist/
+.wrangler/
+
