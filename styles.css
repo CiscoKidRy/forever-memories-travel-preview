@@ -323,15 +323,30 @@ a.button.gold:hover { background: #c4924a; color: #101028; }
   text-transform: uppercase;
 }
 .hero .lede {
+  position: relative;
+  z-index: 0;
+  width: fit-content;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.45;
-  max-width: 26rem;
-  margin: 0.75rem auto 0.85rem;
-  padding: 0.4rem 0.75rem 0.45rem;
-  border-radius: 0.35rem;
+  max-width: min(24rem, 100%);
+  margin: 2.15rem auto;
+  padding: 0.08rem 0.2rem 0.12rem;
+  border-radius: 0;
+  box-shadow: none;
   color: var(--hero-navy);
-  background: rgba(246, 222, 200, 0.94);
+  background: none;
+}
+/* Peach only behind this sentence. The blur starts outside the letters and
+   dies out in the sky, so the headline and the button stay unfrosted. */
+.hero .lede::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: -1.05rem -0.4rem;
+  background: rgba(246, 222, 200, 0.92);
+  filter: blur(10px);
+  pointer-events: none;
 }
 .hero .button { margin: 0 auto; }
 
@@ -671,22 +686,28 @@ textarea { resize: vertical; }
     min-height: 0;
     overflow: hidden;
   }
-  .hero-photo { position: absolute; height: 100%; object-position: 28% center; }
+  .hero-photo { position: absolute; height: 100%; object-position: 64% center; }
   .hero-copy {
     position: absolute;
-    left: 0.8rem;
-    right: auto;
-    top: auto;
-    bottom: 0.6rem;
-    width: calc(100% - 1.6rem);
+    left: auto;
+    right: 0.65rem;
+    top: 50%;
+    bottom: auto;
+    width: min(17rem, 62%);
     margin: 0;
-    transform: none;
-    padding: 2.4rem 0.4rem 0.7rem;
-    background: linear-gradient(to top, rgba(255, 248, 240, 0.94) 45%, rgba(255, 248, 240, 0));
+    transform: translateY(-48%);
+    padding: 0;
+    background: none;
   }
   .hero .lede {
-    max-width: 100%;
-    padding: 0.45rem 0.7rem 0.5rem;
+    max-width: min(26rem, 92%);
+    margin: 2.6rem auto 2.75rem;
+    padding: 0.08rem 0.16rem 0.12rem;
+  }
+  .hero .lede::before {
+    inset: -1.15rem -0.95rem;
+    background: rgba(246, 222, 200, 0.94);
+    filter: blur(12px);
   }
   .welcome-grid, .plan-grid, .card-page, .close-grid, .specialty-row { grid-template-columns: 1fr; }
   .pillar-row { flex-direction: column; align-items: stretch; gap: 0.15rem; }
