@@ -323,11 +323,15 @@ a.button.gold:hover { background: #c4924a; color: #101028; }
   text-transform: uppercase;
 }
 .hero .lede {
-  font-size: 0.92rem;
+  font-size: 1rem;
+  font-weight: 400;
   line-height: 1.45;
   max-width: 26rem;
   margin: 0.75rem auto 0.85rem;
+  padding: 0.4rem 0.75rem 0.45rem;
+  border-radius: 0.35rem;
   color: var(--hero-navy);
+  background: rgba(246, 222, 200, 0.94);
 }
 .hero .button { margin: 0 auto; }
 
@@ -671,14 +675,18 @@ textarea { resize: vertical; }
   .hero-copy {
     position: absolute;
     left: 0.8rem;
-    right: 0.8rem;
+    right: auto;
     top: auto;
     bottom: 0.6rem;
-    width: auto;
+    width: calc(100% - 1.6rem);
     margin: 0;
     transform: none;
     padding: 2.4rem 0.4rem 0.7rem;
     background: linear-gradient(to top, rgba(255, 248, 240, 0.94) 45%, rgba(255, 248, 240, 0));
+  }
+  .hero .lede {
+    max-width: 100%;
+    padding: 0.45rem 0.7rem 0.5rem;
   }
   .welcome-grid, .plan-grid, .card-page, .close-grid, .specialty-row { grid-template-columns: 1fr; }
   .pillar-row { flex-direction: column; align-items: stretch; gap: 0.15rem; }
