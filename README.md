@@ -2,7 +2,7 @@
 
 This is a second copy of the public site so Jennifer can compare it with the current site. It is served from this repository on GitHub Pages at https://preview.forevermemoriestravel.com.
 
-The current site stays at https://forevermemoriestravel.com from CiscoKidRy/forever-memories-travel. Do not publish this preview onto that repository, the apex, or www.
+The current site stays at https://forevermemoriestravel.com from CiscoKidRy/forever-memories-travel. A test copy of these pages is published from that repository at https://forevermemoriestravel.com/test/. This repository still serves https://preview.forevermemoriestravel.com. Do not replace the apex home page or www with this preview.
 
 ## Design
 
@@ -18,7 +18,7 @@ Every preview page sends `noindex, nofollow`. robots.txt is `Disallow: /`. There
 
 ## Trip form
 
-The form posts to https://preview-inquiries.forevermemoriestravel.com/inquiries. The honeypot control is named fmt_hp. The JSON key remains company. Trip values remain Family vacation, Theme park, Cruise, International, and Not sure yet.
+The form posts to https://preview-inquiries.forevermemoriestravel.com/inquiries. A browser on https://forevermemoriestravel.com/test/ sends that same endpoint. The preview service accepts that origin and a source address under /test/. It does not accept a live page address such as https://forevermemoriestravel.com/. The honeypot control is named fmt_hp. The JSON key remains company. Trip values remain Family vacation, Theme park, Cruise, International, and Not sure yet.
 
 The preview inquiry service stores the row in forever_memories_preview and does not send email. The live database forever_memories and the live API on inquiries.forevermemoriestravel.com are separate.
 

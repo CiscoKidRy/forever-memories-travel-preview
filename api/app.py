@@ -21,6 +21,7 @@ import psycopg
 
 ALLOWED_ORIGINS = {
     "https://preview.forevermemoriestravel.com",
+    "https://forevermemoriestravel.com",
 }
 TRIPS = {
     "Family vacation",
@@ -30,7 +31,7 @@ TRIPS = {
     "Not sure yet",
 }
 SOURCE_URL = re.compile(
-    r"^https://preview\.forevermemoriestravel\.com(/[^\s]*)?$"
+    r"^(?:https://preview\.forevermemoriestravel\.com|https://forevermemoriestravel\.com/test)(/[^\s]*)?$"
 )
 EMAIL = re.compile(r"^[^@\s]+@[^@\s]+\.[^@\s]+$")
 UUID = re.compile(
