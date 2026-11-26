@@ -40,6 +40,7 @@ sudo chown root:root /etc/forever-memories-staff-preview.env
 unset TOKEN
 
 sudo -n -u postgres psql -d forever_memories_preview -v ON_ERROR_STOP=1 -f /opt/forever-memories-inquiries-preview/schema.sql
+sudo -n -u postgres psql -d forever_memories_preview -v ON_ERROR_STOP=1 -f /opt/forever-memories-inquiries-preview/source-url-test-path.sql
 sudo -n -u postgres psql -d forever_memories_preview -v ON_ERROR_STOP=1 -f /opt/forever-memories-inquiries-preview/staff-note-author.sql
 
 sudo cp /opt/forever-memories-inquiries-preview/forever-memories-inquiries-preview.service /etc/systemd/system/

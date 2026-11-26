@@ -57,7 +57,8 @@ create table if not exists inquiries (
       and char_length(notes) between 1 and 4000)),
   constraint inquiries_source_url
     check (char_length(source_url) between 1 and 500
-      and source_url ~ '^https://preview\.forevermemoriestravel\.com(/[^[:space:]]*)?$'),
+      and (source_url ~ '^https://preview\.forevermemoriestravel\.com(/[^[:space:]]*)?$'
+        or source_url ~ '^https://forevermemoriestravel\.com/test(/[^[:space:]]*)?$')),
   constraint inquiries_visitor_email_status
     check (visitor_email_status in ('pending', 'sent', 'failed')),
   constraint inquiries_ryan_email_status
